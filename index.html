@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+<link rel="stylesheet" href="port.css">
+<script src="https://kit.fontawesome.com/789293137c.js"crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+<nav>
+<img src="https://tse3.mm.bing.net/th?id=OIP.1025cxIEjULEPDPp30qMcQHaHa&pid=Api&P=0&h=180" class="logo">
+<ul id="sidemenu">
+<li><a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+</ul>
+<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+<div class="header-text">
+<p>Hello</p>
+<h1>Hi, I'm <span>Parameshwar</span> <br>and i am the Front-End Developer</h1>
+</div>
+</div>
+</div>
+
+
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col1">
+<img src="C:\Users\param\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2024-12-07 at 19.07.25_a0d9cbad.jpg">
+</div>
+<div class="about-col2">
+<h1 class="sub-title">About Me</h1>
+<p>I am Parameshwar, and I'm seeking an entry-level opportunity with an
+esteemed organization where I can utilize my skills & enhance learning in the
+field of work. Capable of mastering new technologies.</p>
+<div class="tab-titles">
+<p class="tab-links active-link"
+onclick="opentab('skills')">Skills</p>
+<p class="tab-links"
+onclick="opentab('experience')">Experience</p>
+<p class="tab-links"
+onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JAVASCRIPT</li>
+<li>PYTHON</li>
+<li>PHP</li>
+<li>MySQL</li>
+</ul>
+</div>
+<div class="tab-contents" id="experience">
+<ul>
+    <li><span>2025</span><br> Web Developer Intern at ApexPlanet Software Pvt Ltd</li>
+    <li><span>2025</span><br> 3 Days Program for Building Model Web Application at TM Innovations</li>
+    <li><span>2024</span><br> Participant in Engineer 24 Hackathon at National Institute of Technology karnataka</li>
+</ul>
+
+</div>
+<div class="tab-contents" id="education">
+<ul>
+<li><span>2026</span><br>BTech-IT in NSCET,Theni</li>
+<li><span>2022</span><br>12th in VM boys Government Higher Secondary School,Periyakulam</li>
+<li><span>2020</span><br>10th in VM boys Government Higher Secondary School,Periyakulam</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="services">
+<div class="container">
+<h1 class="sub-title">My Project</h1>
+<div class="services-list">
+<div>
+
+<h2>Real-Time Sign Language Translator for Virtual Meetings</h2>
+<p>I am Build the project for Deef and Dumb People,
+i am using python and open CV for the people who learn the sign language in virtual Meetings.
+</p>
+<a href="https://github.com/parameshwar21/NSCET_TeamRobust1.git">Learn More</a>
+</div>
+<div>
+
+<h2>Garbage-Classification</h2>
+<p> A machine learning project that classifies different types of garbage using image recognition. 
+This helps automate waste sorting and promotes efficient recycling.</p>
+<a href="https://github.com/parameshwar21/Garbage-Classification.git">Learn More</a>
+</div>
+<div>
+<h2>Secure Blog Management System</h2>
+<p>A web-based platform designed for creating, editing, and managing blog posts with enhanced security features.
+It ensures safe user authentication, protects data, and provides an easy-to-use interface for bloggers to manage their content efficiently.</p>
+<a href="https://github.com/parameshwar21/Secure-Blog-Management-System.git">Learn More</a>
+</div>
+<div>
+<h2>Secure patient management System</h2>
+<p>A secure patient management system designed to streamline healthcare operations, ensuring patient data confidentiality and efficient management of medical records.</p>
+<a href="https://github.com/parameshwar21/Secure-Patient-Management-System.git">learn More</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="contact">
+<div class="container">
+<div class="row">
+<div class="contact-left">
+<h1 class="sub-title">Contact Me</h1>
+<p><i class="fa-sharp fa-solid fa-paper-plane"></i>
+parameshdeepi2005@gmail.com</p>
+<p><i class="fa-solid fa-square-phone"></i> 8754214646</p>
+<div class="social-icons">
+
+
+<a href="https://www.instagram.com/_mr_sparkling_heart"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/parameshwar-n-s-bb76802a3"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+<a href="./static/Paramesh Resume.pdf" download class="btn
+btn2">Download CV</a>
+</div>
+<div class="contact-right">
+<form name="submit-to-google-sheet">
+<input type="text" name="Name" placeholder="Your Name"
+required>
+<input type="email" name="Email" placeholder="Your
+Email" required>
+<textarea name="Message"  placeholder="Your
+Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+</form>
+<span id="msg"></span>
+</div>
+</div>
+</div>
+
+<!-- JavaScript for Tabs -->
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname) {
+for (tablink of tablinks) {
+tablink.classList.remove("active-link");
+}
+for (tabcontent of tabcontents) {
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<!-- JavaScript for Side Menu -->
+<script>
+var sidemenu = document.getElementById("sidemenu");
+function openmenu() {
+sidemenu.style.right = "0";
+}
+function closemenu() {
+sidemenu.style.right = "-200px";
+}
+</script>
+<!-- Google Sheets Form Submission Script -->
+<script>
+const scriptURL =
+'https://script.google.com/macros/s/AKfycbzYhH9920ghCVvJHs7KMzDQIBUivFrLgnN8SwTLV2bOzxd8k0SPM5Gi9R-srFjcMGhq/exec';
+
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+form.addEventListener('submit', e => {
+e.preventDefault();
+fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+.then(response => {
+msg.innerHTML = "Message sent successfully";
+setTimeout(function() { msg.innerHTML = ""; }, 5000);
+form.reset();
+})
+.catch(error => console.error('Error!', error.message));
+});
+</script>
+</body>
+</html>
