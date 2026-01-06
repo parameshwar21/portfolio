@@ -4,6 +4,7 @@ Showcase Projects: Displays my best work with descriptions, images, and links.
 About Me: A section to share my background, skills, and interests.
 Contact: Easy-to-use contact form or social links for reaching out.
 
-Clone This Repository:git clone https://github.com/username/portfolio-website.git
+Clone This Repository:git clone https://github.com/parameshwar21/portfolio-website.git
 Navigate To Project Folder:cd portfolio-website
          
+
